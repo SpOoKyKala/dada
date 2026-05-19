@@ -33,5 +33,5 @@ def kill():
 if __name__ == "__main__":
     import uvicorn
     import os
-    port = int(os.getenv("PORT", 9000))
+    port = int(os.environ.get("PORT", 9000))
     uvicorn.run(app, host="0.0.0.0", port=port)

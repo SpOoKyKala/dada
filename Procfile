@@ -1,0 +1,1 @@
+web: python target_service.py
